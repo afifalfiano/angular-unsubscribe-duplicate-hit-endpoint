@@ -1,0 +1,49 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+    }
+
+    .data {
+        height: 200px;
+        min-height: 200px;
+        overflow: auto;
+        margin: 10px 0;
+    }
+
+    .action {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        
+    button {
+        width: 200px;   
+        border: 0;
+        padding: 5px;
+        color: #fff;
+        border-radius: 4px;
+        &.generate {
+            background-color: maroon;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: rgb(146, 77, 77);
+                cursor: not-allowed
+            }
+        }
+        &.reset {
+            background-color: gray;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: rgb(203, 203, 203);
+                cursor:not-allowed
+            }
+        }
+        }
+    }
+}
